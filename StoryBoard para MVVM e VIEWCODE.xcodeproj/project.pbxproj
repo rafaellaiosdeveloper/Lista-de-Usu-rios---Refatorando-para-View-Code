@@ -14,10 +14,10 @@
 		41CEF31C29A2615A0040E161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41CEF31A29A2615A0040E161 /* LaunchScreen.storyboard */; };
 		41CEF32529A262D50040E161 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEF32429A262D50040E161 /* User.swift */; };
 		41CEF32929A29CAD0040E161 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEF32729A29CAD0040E161 /* CustomTableViewCell.swift */; };
-		41CEF32A29A29CAD0040E161 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41CEF32829A29CAD0040E161 /* CustomTableViewCell.xib */; };
 		91541CE72B79499B0042489B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91541CE62B79499B0042489B /* ViewModel.swift */; };
 		91541CEB2B794E280042489B /* CustomCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91541CEA2B794E280042489B /* CustomCellViewModel.swift */; };
 		91D6CA262B7BD4C000D09F78 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D6CA252B7BD4C000D09F78 /* HomeScreenView.swift */; };
+		91D6CA292B7BE3D100D09F78 /* CustomTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D6CA282B7BE3D100D09F78 /* CustomTableViewCellScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +30,10 @@
 		41CEF31D29A2615A0040E161 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41CEF32429A262D50040E161 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		41CEF32729A29CAD0040E161 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		41CEF32829A29CAD0040E161 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		91541CE62B79499B0042489B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		91541CEA2B794E280042489B /* CustomCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellViewModel.swift; sourceTree = "<group>"; };
 		91D6CA252B7BD4C000D09F78 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
+		91D6CA282B7BE3D100D09F78 /* CustomTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCellScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +107,8 @@
 		91541CE82B794DDB0042489B /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				91D6CA272B7BE3B500D09F78 /* Screen */,
 				91541CE92B794DF80042489B /* ViewModel */,
-				41CEF32829A29CAD0040E161 /* CustomTableViewCell.xib */,
 				41CEF32729A29CAD0040E161 /* CustomTableViewCell.swift */,
 			);
 			path = Cell;
@@ -126,6 +126,14 @@
 			isa = PBXGroup;
 			children = (
 				91D6CA252B7BD4C000D09F78 /* HomeScreenView.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		91D6CA272B7BE3B500D09F78 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				91D6CA282B7BE3D100D09F78 /* CustomTableViewCellScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -190,7 +198,6 @@
 			files = (
 				41CEF31C29A2615A0040E161 /* LaunchScreen.storyboard in Resources */,
 				41CEF31929A2615A0040E161 /* Assets.xcassets in Resources */,
-				41CEF32A29A29CAD0040E161 /* CustomTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91D6CA292B7BE3D100D09F78 /* CustomTableViewCellScreen.swift in Sources */,
 				41CEF31429A261590040E161 /* ViewController.swift in Sources */,
 				41CEF32929A29CAD0040E161 /* CustomTableViewCell.swift in Sources */,
 				41CEF31029A261590040E161 /* AppDelegate.swift in Sources */,

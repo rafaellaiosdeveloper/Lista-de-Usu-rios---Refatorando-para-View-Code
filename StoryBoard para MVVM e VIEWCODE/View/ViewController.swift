@@ -45,6 +45,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         print(self.viewModel.getName(indexPath: indexPath))
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+       return 164
+    }
+    
     
 }
 
