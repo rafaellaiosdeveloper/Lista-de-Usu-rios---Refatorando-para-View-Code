@@ -8,20 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController{
-
-    
-    @IBOutlet weak var tableView: UITableView!
     
     let viewModel: ViewModel = ViewModel()
+    
+    var screen: HomeScreenView?
+    
+    override func loadView() {
+        self.screen = HomeScreenView()
+        self.screen?.setupTableVierProtocols(delegate: self, dataSource: self)
+        self.view = screen
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.separatorStyle = .none
-        tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
-
+        
     }
 
 }
