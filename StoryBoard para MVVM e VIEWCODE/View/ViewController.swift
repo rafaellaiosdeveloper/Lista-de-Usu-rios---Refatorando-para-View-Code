@@ -65,6 +65,7 @@ extension ViewController: CustomTableViewCellDelegate{
 extension ViewController: ViewModelDelegate{
     func successRequest() {
         self.screen?.setupTableVierProtocols(delegate: self, dataSource: self)//config table view
+        self.screen?.reloadTableView()
     }
     
     func errorRequest() {

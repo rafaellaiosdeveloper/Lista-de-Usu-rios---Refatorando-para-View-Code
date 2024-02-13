@@ -14,6 +14,7 @@
 		41CEF31C29A2615A0040E161 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41CEF31A29A2615A0040E161 /* LaunchScreen.storyboard */; };
 		41CEF32529A262D50040E161 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEF32429A262D50040E161 /* User.swift */; };
 		41CEF32929A29CAD0040E161 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CEF32729A29CAD0040E161 /* CustomTableViewCell.swift */; };
+		897EBCFBADE90C46A65E8089 /* Pods_StoryBoard_para_MVVM_e_VIEWCODE.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E89EFECC807C1D3345D1D59B /* Pods_StoryBoard_para_MVVM_e_VIEWCODE.framework */; };
 		91541CE72B79499B0042489B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91541CE62B79499B0042489B /* ViewModel.swift */; };
 		91541CEB2B794E280042489B /* CustomCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91541CEA2B794E280042489B /* CustomCellViewModel.swift */; };
 		91D6CA262B7BD4C000D09F78 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D6CA252B7BD4C000D09F78 /* HomeScreenView.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26980FB58E8DB3DA6C9CE8B6 /* Pods-StoryBoard para MVVM e VIEWCODE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryBoard para MVVM e VIEWCODE.debug.xcconfig"; path = "Target Support Files/Pods-StoryBoard para MVVM e VIEWCODE/Pods-StoryBoard para MVVM e VIEWCODE.debug.xcconfig"; sourceTree = "<group>"; };
 		41CEF30C29A261590040E161 /* StoryBoard para MVVM e VIEWCODE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StoryBoard para MVVM e VIEWCODE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41CEF30F29A261590040E161 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41CEF31129A261590040E161 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		91D6CA282B7BE3D100D09F78 /* CustomTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCellScreen.swift; sourceTree = "<group>"; };
 		91D6CA2B2B7BF8F100D09F78 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		91D6CA2D2B7BFDE600D09F78 /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
+		AE52DA16C020013DE75EA195 /* Pods-StoryBoard para MVVM e VIEWCODE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryBoard para MVVM e VIEWCODE.release.xcconfig"; path = "Target Support Files/Pods-StoryBoard para MVVM e VIEWCODE/Pods-StoryBoard para MVVM e VIEWCODE.release.xcconfig"; sourceTree = "<group>"; };
+		E89EFECC807C1D3345D1D59B /* Pods_StoryBoard_para_MVVM_e_VIEWCODE.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StoryBoard_para_MVVM_e_VIEWCODE.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				897EBCFBADE90C46A65E8089 /* Pods_StoryBoard_para_MVVM_e_VIEWCODE.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,8 @@
 			children = (
 				41CEF30E29A261590040E161 /* StoryBoard para MVVM e VIEWCODE */,
 				41CEF30D29A261590040E161 /* Products */,
+				4AE1FA55A7814349A69FE2A8 /* Pods */,
+				F8F9B63C0D37164F9D251821 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +90,15 @@
 				91D6CA2D2B7BFDE600D09F78 /* user.json */,
 			);
 			path = "StoryBoard para MVVM e VIEWCODE";
+			sourceTree = "<group>";
+		};
+		4AE1FA55A7814349A69FE2A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26980FB58E8DB3DA6C9CE8B6 /* Pods-StoryBoard para MVVM e VIEWCODE.debug.xcconfig */,
+				AE52DA16C020013DE75EA195 /* Pods-StoryBoard para MVVM e VIEWCODE.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		91541CE32B79490B0042489B /* Model */ = {
@@ -152,6 +168,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		F8F9B63C0D37164F9D251821 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E89EFECC807C1D3345D1D59B /* Pods_StoryBoard_para_MVVM_e_VIEWCODE.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +183,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41CEF32029A2615A0040E161 /* Build configuration list for PBXNativeTarget "StoryBoard para MVVM e VIEWCODE" */;
 			buildPhases = (
+				72781330CA8D9AF3FEE113E1 /* [CP] Check Pods Manifest.lock */,
 				41CEF30829A261590040E161 /* Sources */,
 				41CEF30929A261590040E161 /* Frameworks */,
 				41CEF30A29A261590040E161 /* Resources */,
+				C26E888279FCC28C6F6E162E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +243,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72781330CA8D9AF3FEE113E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StoryBoard para MVVM e VIEWCODE-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C26E888279FCC28C6F6E162E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StoryBoard para MVVM e VIEWCODE/Pods-StoryBoard para MVVM e VIEWCODE-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StoryBoard para MVVM e VIEWCODE/Pods-StoryBoard para MVVM e VIEWCODE-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StoryBoard para MVVM e VIEWCODE/Pods-StoryBoard para MVVM e VIEWCODE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41CEF30829A261590040E161 /* Sources */ = {
@@ -286,7 +354,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -347,7 +415,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -368,12 +436,14 @@
 		};
 		41CEF32129A2615A0040E161 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26980FB58E8DB3DA6C9CE8B6 /* Pods-StoryBoard para MVVM e VIEWCODE.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SP59LRFJ97;
+				DEVELOPMENT_TEAM = G22U8RL76N;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "StoryBoard para MVVM e VIEWCODE/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -395,12 +465,14 @@
 		};
 		41CEF32229A2615A0040E161 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE52DA16C020013DE75EA195 /* Pods-StoryBoard para MVVM e VIEWCODE.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SP59LRFJ97;
+				DEVELOPMENT_TEAM = G22U8RL76N;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "StoryBoard para MVVM e VIEWCODE/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

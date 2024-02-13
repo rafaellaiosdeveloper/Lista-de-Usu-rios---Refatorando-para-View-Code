@@ -1,0 +1,6 @@
+framework module Pods_StoryBoard_para_MVVM_e_VIEWCODE {
+  umbrella header "Pods-StoryBoard para MVVM e VIEWCODE-umbrella.h"
+
+  export *
+  module * { export * }
+}

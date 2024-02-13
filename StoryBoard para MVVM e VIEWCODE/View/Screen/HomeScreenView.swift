@@ -31,7 +31,10 @@ class HomeScreenView: UIView {
     public func setupTableVierProtocols(delegate: UITableViewDelegate, dataSource: UITableViewDataSource){
         self.tableView.delegate = delegate
         self.tableView.dataSource = dataSource
-        
+    }
+    
+    public func reloadTableView(){
+        self.tableView.reloadData()
     }
    
     private func configConstraints() {
