@@ -15,14 +15,15 @@ class ViewController: UIViewController{
     
     override func loadView() {
         self.screen = HomeScreenView()
-        self.screen?.setupTableVierProtocols(delegate: self, dataSource: self)
+       
         self.view = screen
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.viewModel.delegate(delegate: self)
+        self.viewModel.fetchAllRequest()
     }
 
 }
@@ -56,6 +57,18 @@ extension ViewController: CustomTableViewCellDelegate{
     
     func tappedHeartButton(_ user: User) {
         self.viewModel.exchangeHeartState(user)
+    }
+    
+    
+}
+
+extension ViewController: ViewModelDelegate{
+    func successRequest() {
+        self.screen?.setupTableVierProtocols(delegate: self, dataSource: self)//config table view
+    }
+    
+    func errorRequest() {
+        print("Erro ao realizar a request")
     }
     
     

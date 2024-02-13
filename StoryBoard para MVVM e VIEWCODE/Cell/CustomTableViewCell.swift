@@ -70,7 +70,7 @@ class CustomTableViewCell: UITableViewCell {
     func setupCell(user: User) {
         self.viewModel = CustomCellViewModel(data: user)
         
-        self.screen.userImageView.image = self.viewModel?.getUserImage
+        self.screen.userImageView.image = UIImage(systemName: self.viewModel?.getUserImage ?? "")
         self.screen.nameLabel.text = self.viewModel?.getName
         self.screen.professionLabel.text = self.viewModel?.getProfession
         self.screen.salaryLabel.text = self.viewModel?.getSalary

@@ -18,6 +18,8 @@
 		91541CEB2B794E280042489B /* CustomCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91541CEA2B794E280042489B /* CustomCellViewModel.swift */; };
 		91D6CA262B7BD4C000D09F78 /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D6CA252B7BD4C000D09F78 /* HomeScreenView.swift */; };
 		91D6CA292B7BE3D100D09F78 /* CustomTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D6CA282B7BE3D100D09F78 /* CustomTableViewCellScreen.swift */; };
+		91D6CA2C2B7BF8F100D09F78 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D6CA2B2B7BF8F100D09F78 /* Service.swift */; };
+		91D6CA2E2B7BFDE600D09F78 /* user.json in Resources */ = {isa = PBXBuildFile; fileRef = 91D6CA2D2B7BFDE600D09F78 /* user.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		91541CEA2B794E280042489B /* CustomCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellViewModel.swift; sourceTree = "<group>"; };
 		91D6CA252B7BD4C000D09F78 /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		91D6CA282B7BE3D100D09F78 /* CustomTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCellScreen.swift; sourceTree = "<group>"; };
+		91D6CA2B2B7BF8F100D09F78 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		91D6CA2D2B7BFDE600D09F78 /* user.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = user.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		41CEF30E29A261590040E161 /* StoryBoard para MVVM e VIEWCODE */ = {
 			isa = PBXGroup;
 			children = (
+				91D6CA2A2B7BF8B500D09F78 /* Service */,
 				91541CE82B794DDB0042489B /* Cell */,
 				91541CE52B7949580042489B /* View */,
 				91541CE42B7949460042489B /* ViewModel */,
@@ -75,6 +80,7 @@
 				41CEF31829A2615A0040E161 /* Assets.xcassets */,
 				41CEF31A29A2615A0040E161 /* LaunchScreen.storyboard */,
 				41CEF31D29A2615A0040E161 /* Info.plist */,
+				91D6CA2D2B7BFDE600D09F78 /* user.json */,
 			);
 			path = "StoryBoard para MVVM e VIEWCODE";
 			sourceTree = "<group>";
@@ -138,6 +144,14 @@
 			path = Screen;
 			sourceTree = "<group>";
 		};
+		91D6CA2A2B7BF8B500D09F78 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				91D6CA2B2B7BF8F100D09F78 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -196,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91D6CA2E2B7BFDE600D09F78 /* user.json in Resources */,
 				41CEF31C29A2615A0040E161 /* LaunchScreen.storyboard in Resources */,
 				41CEF31929A2615A0040E161 /* Assets.xcassets in Resources */,
 			);
@@ -215,6 +230,7 @@
 				91D6CA262B7BD4C000D09F78 /* HomeScreenView.swift in Sources */,
 				91541CEB2B794E280042489B /* CustomCellViewModel.swift in Sources */,
 				41CEF32529A262D50040E161 /* User.swift in Sources */,
+				91D6CA2C2B7BF8F100D09F78 /* Service.swift in Sources */,
 				91541CE72B79499B0042489B /* ViewModel.swift in Sources */,
 				41CEF31229A261590040E161 /* SceneDelegate.swift in Sources */,
 			);

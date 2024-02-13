@@ -1,0 +1,59 @@
+{
+    "group" : [
+        {
+            "name": "Caio",
+            "age": 30,
+            "profession": "Dev Ios",
+            "salary": "20.000,00",
+            "imageUser": "person.circle",
+            "isEnableHeart": false,
+            "identifier": 0
+        },
+        {
+            "name": "Rafaella",
+            "age": 30,
+            "profession": "Dev Ios",
+            "salary": "20.000,00",
+            "imageUser": "person.circle",
+            "isEnableHeart": false,
+            "identifier": 0
+        },
+        {
+            "name": "Jeferson",
+            "age": 30,
+            "profession": "Dev Ios",
+            "salary": "20.000,00",
+            "imageUser": "person.circle",
+            "isEnableHeart": false,
+            "identifier": 0
+        },
+        {
+            "name": "Nicolas",
+            "age": 30,
+            "profession": "Dev Ios",
+            "salary": "20.000,00",
+            "imageUser": "person.circle",
+            "isEnableHeart": false,
+            "identifier": 0
+        },
+        {
+            "name": "Lena",
+            "age": 30,
+            "profession": "Dev Ios",
+            "salary": "20.000,00",
+            "imageUser": "person.circle",
+            "isEnableHeart": false,
+            "identifier": 0
+        },
+        {
+            "name": "Polly",
+            "age": 30,
+            "profession": "Dev Ios",
+            "salary": "20.000,00",
+            "imageUser": "person.circle",
+            "isEnableHeart": false,
+            "identifier": 0
+        }
+        
+    ]
+}

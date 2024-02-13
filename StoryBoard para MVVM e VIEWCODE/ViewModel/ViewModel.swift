@@ -7,29 +7,31 @@
 
 import UIKit
 
+protocol ViewModelDelegate: AnyObject{
+    func successRequest()
+    func errorRequest()
+}
+
 class ViewModel {
     
-   private var listUser: [User] = []
+    private let service: Service = Service()
+    private var listUser: [User] = []
     
-    init(){
-        self.configArrayUser()
+    private weak var delegate: ViewModelDelegate?
+    
+    public func delegate(delegate: ViewModelDelegate?) {
+        self.delegate = delegate
     }
     
-   private func configArrayUser(){
-       listUser.append(User(name: "Caio", age: 30, profession: "Dev Ios", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnableHeart: true, identifier: 0))
-       listUser.append(User(name: "Fabricio", age: 30, profession: "Dev Ios", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnableHeart: false, identifier: 1))
-       listUser.append(User(name: "Ge", age: 30, profession: "Dev Ios", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnableHeart: false, identifier: 2))
-       listUser.append(User(name: "Rafaella", age: 30, profession: "Dev Ios", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnableHeart: false, identifier: 3))
-       listUser.append(User(name: "André", age: 30, profession: "Dev Ios", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnableHeart: false, identifier: 4))
-       listUser.append(User(name: "Silvio", age: 30, profession: "Dev Ios", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnableHeart: false, identifier: 5))
-       listUser.append(User(name: "Thiago", age: 30, profession: "Dev Ios", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnableHeart: false, identifier: 6))
-       listUser.append(User(name: "Caio", age: 30, profession: "Dev Ios", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnableHeart: true, identifier: 7))
-       listUser.append(User(name: "Fabricio", age: 30, profession: "Dev Ios", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnableHeart: false, identifier: 8))
-       listUser.append(User(name: "Ge", age: 30, profession: "Dev Ios", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnableHeart: false, identifier: 9))
-       listUser.append(User(name: "Rafaella", age: 30, profession: "Dev Ios", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnableHeart: false, identifier: 10))
-       listUser.append(User(name: "André", age: 30, profession: "Dev Ios", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnableHeart: false, identifier: 11))
-       listUser.append(User(name: "Silvio", age: 30, profession: "Dev Ios", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnableHeart: false, identifier: 12))
-       listUser.append(User(name: "Thiago", age: 30, profession: "Dev Ios", salary: "20.000,00", imageUser: UIImage(systemName: "person.circle") ?? UIImage(), isEnableHeart: false, identifier: 13))
+    public func fetchAllRequest(){
+        service.getUserFromJson(fromFileNamed: "user") { success, error in
+            if let _success = success{
+                self.listUser = _success.group
+                self.delegate?.successRequest()
+            }else{
+                self.delegate?.errorRequest()
+            }
+        }
     }
     
     public var numberOfRows:Int{
