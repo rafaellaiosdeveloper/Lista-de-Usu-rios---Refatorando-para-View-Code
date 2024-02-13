@@ -13,6 +13,7 @@ Refatoração para o padrão View Code, eliminando dependências de Interface Bu
 Listagem de usuários com informações detalhadas de cada um.
 
 #Tecnologias Utilizadas
+
 Swift
 
 UIKit
