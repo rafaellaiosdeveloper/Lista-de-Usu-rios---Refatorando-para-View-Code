@@ -15,6 +15,7 @@ class HomeScreenView: UIView {
         tableView.separatorStyle = .none
         tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomTableViewCell")
     return tableView
+    
     }()
 
     override init(frame: CGRect) {
